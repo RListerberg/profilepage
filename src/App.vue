@@ -55,6 +55,15 @@
       app
     >
       <v-list>
+        <v-list-tile>
+          <v-list-tile-title>Projects</v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile @click="greet">
+          <v-list-tile-action>
+            <v-icon>music_note</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>Pedal-Pi</v-list-tile-title>
+        </v-list-tile>
         <v-list-tile @click="right = !right">
           <v-list-tile-action>
             <v-icon>compare_arrows</v-icon>
@@ -64,7 +73,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+      <span>&copy; 2018</span>
     </v-footer>
   </v-app>
 </template>
@@ -90,6 +99,15 @@ export default {
       right: true,
       rightDrawer: false,
       title: 'Vuetify.js'
+    }
+  },
+  methods: {
+    greet: function (event) {
+        alert('Hello' + this.name + '!')
+
+        if(event){
+            alert(event.target.tagName)
+        }
     }
   }
 }
