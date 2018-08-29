@@ -5,13 +5,12 @@
       :clipped-left="clipped"
     >
       <v-toolbar-title v-text="title"></v-toolbar-title>
-                    <v-avatar
-            :tile="tile"
-            :size="avatarSize"
-            color="grey lighten-4"
-      >
-        <img class="circular" src="@/assets/BitEmojiProfilePic.png" alt="avatar">
-      </v-avatar>
+        <v-avatar
+              :size="avatarSize"
+              color="grey lighten-4"
+                >
+          <img class="circular" src="@/assets/BitEmojiProfilePic.png" alt="avatar">
+        </v-avatar>
     </v-toolbar>
     <v-content>
       <HelloWorld/>

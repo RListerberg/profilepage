@@ -9,6 +9,9 @@ import {
   VIcon,
   VGrid,
   VToolbar,
+  VAvatar,
+  VResponsive,
+  VImg,
   transitions
 } from 'vuetify'
 import 'vuetify/src/stylus/app.styl'
@@ -23,7 +26,10 @@ Vue.use(Vuetify, {
     VIcon,
     VGrid,
     VToolbar,
-    transitions
+    VAvatar,
+    VResponsive,
+    VImg,
+    transitions,
   },
   theme: {
     primary: '#ee44aa',

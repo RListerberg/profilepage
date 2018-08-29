@@ -1,17 +1,22 @@
 <template>
     <v-container fluid>
-      <v-responsive>
-        <v-layout column align-center>
+      <v-img
+        class="imgCenter"
+        :gradient="gradient"
+        src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg">
+        <v-layout column align-center >
+            <div class="align-content-center">
             <blockquote>
-              &#8220;First, solve the problem. Then, write the code.&#8221;
+              &#8220;Drink up me hearties, Yoho!!&#8221;
               <footer>
                 <small>
                   <em>&mdash;Robin Listerberg</em>
                 </small>
               </footer>
             </blockquote>
+            </div>
         </v-layout>
-      </v-responsive>  
+      </v-img>
     </v-container>
 </template>
 
@@ -43,5 +48,14 @@ li {
 a {
   color: #42b983;
 }
-
+.fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.imgCenter{
+  align-self: center;
+}
+.v-responsive__content{
+  align-self: center
+}
 </style>
