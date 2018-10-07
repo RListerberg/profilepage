@@ -13,7 +13,7 @@
         </v-avatar>
     </v-toolbar>
     <v-content>
-      <HelloWorld/>
+      <Index/>
     </v-content>
     <v-navigation-drawer
       temporary
@@ -40,19 +40,19 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2018</span>
-    </v-footer>
+    <Footer/>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Index from './components/Index'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Index,
+    Footer
   },
   data () {
     return {

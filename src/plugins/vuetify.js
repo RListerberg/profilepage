@@ -12,6 +12,7 @@ import {
   VAvatar,
   VResponsive,
   VImg,
+  VCard,
   transitions
 } from 'vuetify'
 import 'vuetify/src/stylus/app.styl'
@@ -29,6 +30,7 @@ Vue.use(Vuetify, {
     VAvatar,
     VResponsive,
     VImg,
+    VCard,
     transitions,
   },
   theme: {
